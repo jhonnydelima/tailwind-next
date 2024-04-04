@@ -1,6 +1,6 @@
 import { Logo } from './Logo'
 import { NavItem } from './NavItem'
-import { SearchBar } from './SearchBar'
+import { Input } from '../Input'
 import {
   BarChart,
   CheckSquare,
@@ -8,6 +8,7 @@ import {
   Flag,
   Home,
   LifeBuoy,
+  Search,
   SquareStack,
   Users,
 } from 'lucide-react'
@@ -20,7 +21,12 @@ export function Sidebar() {
       <div className="mx-2 flex flex-col gap-6">
         <Logo />
 
-        <SearchBar />
+        <Input.Root>
+          <Input.Prefix>
+            <Search className="h-5 w-5 text-zinc-500" />
+          </Input.Prefix>
+          <Input.Control placeholder="Search" />
+        </Input.Root>
       </div>
 
       <nav className="space-y-0.5">
