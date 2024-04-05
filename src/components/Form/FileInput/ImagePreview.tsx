@@ -25,12 +25,6 @@ export function ImagePreview() {
   }
 
   return (
-    // <img
-    //   src={previewURL}
-    //   alt=""
-    //   className="h-16 w-16 rounded-full object-cover"
-    // />
-
     <Image
       src={previewURL}
       alt=""
